@@ -20,6 +20,7 @@ bw_long <- bw %>%
     pivot_longer(starts_with("d"), names_to = "Day", values_to = "BW") %>%
     mutate(Day = as.integer(sub("d", "", Day)))
 
+
 int_levels <- c("d0_d7","d7_d14","d14_d21","d21_d28","d28_d35","d35_d42")
 int_labels <- c("0-7","7-14","14-21","21-28","28-35","35-42")
 
